@@ -83,7 +83,7 @@ async function loadNovels() {
   return JSON.stringify(await response.json());
 }
 
-const port = 3000;
+const port = 80;
 
 app.get("/chapters", (req, res) => {
   loadChapters().then((chapters) => {
